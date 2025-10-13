@@ -1,0 +1,188 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+/* ======= Cabeçalho ======= */
+.topo {
+    padding: 20px 80px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+.topo nav {
+    font-size: 14px;
+    color: #666;
+}
+.topo nav a {
+    text-decoration: none;
+    color: #1c593a;
+}
+.topo h1 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+/* ======= Conteúdo principal ======= */
+.produto-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 60px;
+    padding: 50px 80px;
+    flex-wrap: wrap;
+}
+.img-produto img {
+    width: 350px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.info-produto {
+    max-width: 500px;
+}
+.disponibilidade {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.em-estoque {
+    color:red;
+    font-weight: bold;
+}
+.descricao {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.preco {
+    font-size: 34px;
+    color: #1c593a;
+    margin: 15px 0;
+}
+.parcelamento {
+    font-size: 14px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.parcelamento a {
+    color: #1c593a;
+    text-decoration: none;
+}
+
+/* ======= Frete e Ações ======= */
+.frete {
+    margin-bottom: 20px;
+}
+.frete input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.acoes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.acoes input {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+}
+.btn-carrinho {
+    background-color: #1c593a;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-carrinho:hover {
+    background-color: #15472e;
+}
+
+/* ======= Descrição Detalhada ======= */
+.descricao-detalhada {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+.descricao-detalhada h2 {
+    color: #1c593a;
+    margin-bottom: 15px;
+}
+.descricao-detalhada ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+}
+.descricao-detalhada table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+.descricao-detalhada th, .descricao-detalhada td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+.descricao-detalhada th {
+    color: #444;
+}
+
+/* ======= Rodapé ======= */
+footer {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+    color: #555;
+}
+footer .paginacao {
+    margin-bottom: 30px;
+}
+.logo-footer {
+    width: 80px;
+    margin-bottom: 10px;
+}
+footer h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #2d4c34;
+}
+footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+footer .redes-sociais {
+    margin-top: 20px;
+}
+footer .redes-sociais img {
+    width: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* ======= Responsivo ======= */
+@media (max-width: 800px) {
+    .produto-container {
+    flex-direction: column;
+    align-items: center;
+}
+.info-produto {
+    text-align: center;
+}
+.frete input {
+    width: 100%;
+}
+}
