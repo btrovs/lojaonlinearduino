@@ -1,0 +1,309 @@
+/* === CABEÇALHO === */
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* === CONTAINER DE CARDS === */
+.cards-container {
+    display: flex;
+    gap: 30px;                    /* Espaço entre os cards */
+    justify-content: center;      /* Centraliza os cards na tela */
+    padding: 40px;
+    flex-wrap: wrap;              /* Permite quebra de linha em telas menores */
+}
+
+/* === CARD INDIVIDUAL === */
+.card {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;          /* Alinha imagem e texto verticalmente */
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* EFEITO HOVER NO CARD */
+.card:hover {
+    transform: translateY(-5px);  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+}
+
+/* IMAGEM DO CARD */
+.card img {
+    max-width: 100px;             
+    margin-right: 20px;           
+}
+
+/* TEXTO DO CARD */
+.card-texto h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* NEGRITO DENTRO DO TEXTO */
+.card-texto strong {
+    font-weight: bold;
+    color: #000;
+}
+
+/* BOTÃO DE AÇÃO */
+.botao-card {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #006f4c;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* ÍCONE DE SETA */
+.botao-card span {
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+/* === SEÇÃO MAIS VENDIDOS (ATUALIZADA) === */
+.mais-vendidos {
+    background-color: #ffffff;
+    padding: 60px 40px;
+    text-align: center;
+    border-top: 4px solid #006f4c;
+}
+
+.mais-vendidos h2 {
+    font-size: 2em;
+    color: #006f4c;
+    font-weight: bold;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.mais-vendidos h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #00915f;
+    margin: 12px auto 0;
+    border-radius: 10px;
+}
+
+/* Contêiner dos produtos */
+.produtos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Card individual */
+.produto-card {
+    background-color: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Efeito ao passar o mouse */
+.produto-card:hover {
+    transform: translateY(-6px);
+    border-color: #00915f;
+    box-shadow: 0 8px 16px rgba(0, 111, 76, 0.25);
+}
+
+/* Imagens */
+.produto-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Nome do produto */
+.produto-card h3 {
+    font-size: 1rem;
+    color: #006f4c;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Preço */
+.produto-card .preco {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Promoção */
+.produto-card .preco .antigo {
+    color: #888;
+    text-decoration: line-through;
+    margin-right: 6px;
+}
+
+.produto-card .preco .novo {
+    color: #00915f;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .mais-vendidos {
+        padding: 40px 20px;
+    }
+
+    .produtos-container {
+        gap: 20px;
+    }
+
+    .produto-card {
+        width: 90%;
+    }
+}
+
+
+/* ===== Barra de Pesquisa e Carrinho ===== */
+
+.barra-pesquisa-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #006f4c; /* Fundo verde */
+    padding: 15px 40px;
+    gap: 20px;
+}
+
+/* ===== Ícone do menu ===== */
+.menu-icon {
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white; /* Ícone branco */
+    transition: transform 0.2s;
+}
+
+.menu-icon:hover {
+    transform: scale(1.1);
+}
+
+/* ===== Barra de pesquisa ===== */
+.barra-pesquisa {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 700px;
+    background-color: white; /* Fundo branco */
+    border: 2px solid #006f4c; /* Borda verde */
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.campo-pesquisa {
+    flex: 2;
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+}
+
+.seletor-categoria {
+    border: none;
+    border-left: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #333;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+/* ===== Botão de pesquisa ===== */
+.botao-pesquisa {
+    background-color: #006f4c; /* Verde */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.botao-pesquisa:hover {
+    background-color: #00915f; /* Verde mais claro no hover */
+}
+
+.botao-pesquisa img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1); /* Ícone branco */
+}
+
+/* ===== Carrinho ===== */
+.carrinho-icone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    color: white; /* Texto e ícone brancos */
+    position: relative;
+}
+
+.carrinho-icone img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    filter: brightness(0) invert(1); /* Ícone branco */
+}
+
+.contador {
+    background-color: white; /* Bolinha branca */
+    color: #006f4c; /* Número verde */
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+    position: absolute;
+    top: -6px;
+    left: 18px;
+}
+
+.valor-total {
+    color: white;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+    .barra-pesquisa-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
+    }
+
+    .barra-pesquisa {
+        width: 100%;
+    }
+
+    .carrinho-icone {
+        align-self: flex-end;
+    }
+}
+
