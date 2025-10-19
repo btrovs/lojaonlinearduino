@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Arduino Amazônia</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <a href="index.html">
+                <img src="Imagens/logo 2.png" alt="Logo da Loja">
+            </a>
+            <nav>
+                <ul class="cabecalho-lista">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Entre em Contato com a Nossa Equipe - Deixe sua Mensagem!</h2>
+
+            <form action="#">
+                <div class="form-item">
+                    <label for="nomesobrenome">Nome e Sobrenome</label>
+                    <input type="text" id="nomesobrenome" class="input-padrao" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                </div>
+
+                <div class="form-item">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+                </div>
+
+                <div class="form-item">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                </div>
+
+                <fieldset class="multipla">
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label>
+                        <input type="radio" name="contato" value="email"> Email
+                    </label>
+                    <label>
+                        <input type="radio" name="contato" value="telefone"> Telefone
+                    </label>
+                    <label>
+                        <input type="radio" name="contato" value="whatsapp" checked> Whatsapp
+                    </label>
+                </fieldset>
+
+                <label class="checkbox">
+                    <input type="checkbox" checked> Gostaria de receber nossas novidades por email?
+                </label>
+                
+                <div class="botao">
+                    <input type="submit" value="Enviar Formulário" class="enviar">
+                    <input type="reset" value="Limpar Formulário" class="limpar">
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column contact-info">
+                <img src="Imagens/logo 2.png" alt="Logo da loja" class="footer-logo">
+                <h4>ATENDIMENTO EM HORÁRIO COMERCIAL!</h4>
+                <p class="phone-number">(91) 98213-0561</p>
+                <h4>Endereço</h4>
+                <p>Funcionamos apenas online, com produtos a pronta entrega. O cliente pode retirar o produto, ou podemos enviar via Correios ou Uber Flash (Valores repassados via WhatsApp).</p>
+                <div class="social-icons">
+                    <a href="#"><img src="Imagens/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="Imagens/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#"><img src="Imagens/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+    
+            <div class="footer-column about-us">
+                <h4>Sobre Nós</h4>
+                <p>A loja Arduino Belém, nasceu com o intuito de fomentar a demanda local por produtos e equipamentos necessários para o desenvolvimento maker local, e temos como missão permitir a Engenheiros, Professores, Inventores, Designers, Estudantes e até mesmo curiosos da tecnologia, o acesso a tecnologias e equipamentos, que possibilitem a concretização das suas ideias e projetos em realidade. A Arduino Belém não é só uma loja, prestamos consultoria em projetos, produzimos códigos sob encomenda.</p>
+            </div>
+    
+            <div class="footer-column attention">
+                <h4>Atenção:</h4>
+                <p>As imagens do site são meramente ilustrativas, entre em contato para saber mais!</p>
+            </div>
+        </div>
+    
+        <div class="footer-bottom-bar">
+               <p class="copyright">&copy; Arduino Amazônia - CNPJ: xx.xxx.xxx/xxxx-xx- Todos os direitos reservados - 2025      
+            
+               <div class="footer-payment-icons">
+            <img src="Imagens/visa.webp" alt="Visa">
+            <img src="Imagens/mastercard.png" alt="Mastercard">
+            <img src="Imagens/mercado.png" alt="Mercado Pago">
+            <img src="Imagens/boleto.png" alt="Boleto">
+            <img src="Imagens/elo.png" alt="Elo">
+        </div>
+    
+        <a href="#" class="back-to-top" title="Voltar ao topo">↑</a>
+    </footer>
+    </body>
+</html>

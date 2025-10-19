@@ -1,0 +1,327 @@
+/* ================================================== */
+/* ARQUIVO: cadastro.css (Versão Completa)            */
+/* DESCRIÇÃO: Estilo para a página de Cadastro.       */
+/* ================================================== */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* === SEU CABEÇALHO E BARRA DE PESQUISA (INTACTOS) === */
+header {
+    background-color: #ffffff; /* Ajustado para branco para consistência */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-bottom: 1px solid #ddd;
+}
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+.cabecalho img {
+    height: 50px;
+}
+.cabecalho-lista {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.cabecalho-lista a {
+    color: #333; /* Ajustado para texto escuro em fundo branco */
+    text-decoration: none;
+    font-weight: bold;
+}
+.barra-pesquisa-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c593a; /* Usando o verde padrão do tema */
+    padding: 15px 40px;
+    gap: 20px;
+}
+.menu-icon {
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.barra-pesquisa {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.campo-pesquisa {
+    flex: 2;
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 16px;
+}
+.seletor-categoria {
+    border: none;
+    border-left: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: #fff;
+    outline: none;
+}
+.botao-pesquisa {
+    background-color: #1c593a;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.botao-pesquisa img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+.carrinho-icone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+.carrinho-icone img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
+.contador {
+    background-color: white;
+    color: #1c593a;
+    font-size: 13px;
+    border-radius: 50%;
+    padding: 2px 6px;
+    position: absolute;
+    top: -6px;
+    left: 18px;
+}
+
+/* === SEU FORMULÁRIO DE CADASTRO (INTACTO) === */
+main {
+    padding: 40px 20px;
+}
+.formulario-cadastro {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.formulario-cadastro h2 {
+    margin-bottom: 20px;
+    color: #1c593a;
+    text-align: center;
+}
+.input-padrao {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.multipla {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+}
+.multipla legend {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.multipla label {
+    display: inline-block; /* Alinha os radio buttons */
+    margin-right: 20px;
+}
+.checkbox {
+    display: block;
+    margin: 20px 0;
+}
+.botao {
+    display: flex;
+    gap: 10px;
+}
+.enviar, .limpar {
+    flex: 1; /* Faz os botões dividirem o espaço */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.enviar {
+    background-color: #1c593a;
+    color: white;
+}
+.limpar {
+    background-color: #ccc;
+    color: #000;
+}
+#mensagem-senha {
+    font-weight: bold;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* ======================================================= */
+/* ESTILO DO RODAPÉ (BLINDADO COM !important) - ADICIONADO */
+/* ======================================================= */
+footer {
+    background-color: #f7f7f7 !important;
+    color: #555 !important;
+    padding-top: 50px !important;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    text-align: left !important;
+    position: relative !important;
+    border-top: 1px solid #e7e7e7 !important;
+}
+.footer-content {
+    display: flex !important;
+    justify-content: space-between !important;
+    gap: 40px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+    flex-wrap: wrap !important;
+}
+.footer-column {
+    flex: 1 !important;
+    min-width: 280px !important;
+}
+.footer-column h4 {
+    font-size: 16px !important;
+    color: #333 !important;
+    font-weight: bold !important;
+    margin: 0 0 15px 0 !important;
+    text-transform: uppercase !important;
+}
+.footer-column p {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    margin: 0 0 1em 0 !important;
+}
+.footer-logo {
+    width: 150px !important;
+    height: auto !important;
+    max-width: 150px !important;
+    margin-bottom: 20px !important;
+}
+.phone-number {
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    color: #333 !important;
+}
+.social-icons {
+    margin-top: 20px !important;
+    display: flex !important;
+    gap: 15px !important;
+}
+.social-icons img {
+    width: 24px !important;
+    height: 24px !important;
+    margin: 0 !important;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+.social-icons img:hover {
+    opacity: 1;
+}
+.about-us {
+    flex: 1.5 !important;
+}
+.footer-bottom-bar {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+    padding: 20px 5% !important;
+    margin-top: 40px !important;
+    background-color: #e9e9e9 !important;
+    color: #555 !important;
+    font-size: 13px !important;
+}
+.footer-bottom-bar .copyright {
+    margin: 0 !important;
+    font-size: 13px !important;
+}
+.footer-payment-icons {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+.footer-payment-icons img {
+    height: 22px !important;
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+}
+.back-to-top {
+    position: absolute !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    background-color: #888 !important;
+    color: white !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 20px !important;
+    text-decoration: none !important;
+    transition: background-color 0.3s !important;
+}
+.back-to-top:hover {
+    background-color: #555 !important;
+}
+
+@media (max-width: 900px) {
+    .footer-content, .footer-column {
+        text-align: center !important;
+    }
+    .social-icons {
+        justify-content: center !important;
+    }
+    .footer-bottom-bar {
+        justify-content: center !important;
+    }
+}
+@media (max-width: 768px) {
+    .barra-pesquisa-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
+    }
+    .barra-pesquisa {
+        width: 100%;
+    }
+    .carrinho-icone {
+        align-self: flex-end;
+    }
+}
