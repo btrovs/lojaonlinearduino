@@ -1,0 +1,11 @@
+Layout da Página:
+
+Fonte: Montserrat-Arabic, antes de mudar tudo, manda um print, de como fica nessa fonte, se não deixa na anterior.
+
+Cores: 
+
+#1c593a (Verde Escuro)
+
+#ffffff (Branco)
+
+#eaeaea (Cinza- Claro)
