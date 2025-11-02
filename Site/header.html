@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loja Arduino Belém</title>
+<link rel="stylesheet" href="header.css">
+</head>
+<body>
+
+<header class="topo">
+    <div class="bemvindo">
+        <p>Bem Vindo(a) à Loja Arduino Belém</p>
+    </div>
+
+    <div class="cabecalho">
+        <img src="Imagens/logo.png" alt="Logo da Loja Arduino Amazônia" class="logo">
+
+        <div class="barra-pesquisa">
+            
+            <button id="menu-hamburguer" aria-controls="menu-sidebar" aria-expanded="false" title="Abrir Menu">
+                &#9776; </button>
+            
+            <input type="text" placeholder="Procure por Produtos">
+            <select>
+                <option>Todas as categorias</option>
+                <option>Componentes</option>
+                <option>Sensores</option>
+                <option>Placas Arduino</option>
+            </select>
+            <button class="search-btn">🔍</button>
+        </div>
+
+        <div class="acoes">
+            <a href="#">🛍 Loja</a>
+            <span>|</span>
+            <a href="#">👤 Minha Conta</a>
+        </div>
+
+        <div class="carrinho">
+            <span class="icon">🛒</span>
+            <span class="valor">R$0,00</span>
+            <span class="quantidade">0</span>
+        </div>
+    </div>
+</header>
+
+<div id="header-container">
+    <aside id="menu-sidebar">
+        <button id="fechar-menu" title="Fechar Menu">
+            &times; </button>
+
+        <nav>
+            <ul>
+                <li class="item-com-submenu">
+                    <a href="#">ARDUINO <span class="seta-submenu">›</span></a>
+                    <ul class="submenu">
+                        <li><a href="placa-uno.html">Placa UNO</a></li>
+                        <li><a href="placa-mega.html">Placa MEGA</a></li>
+                        <li><a href="modulos.html">Módulos</a></li>
+                        <li><a href="motores.html">Motores</a></li>
+                    </ul>
+                </li>
+
+                <li class="item-com-submenu">
+                    <a href="#">KITS E PROJETOS <span class="seta-submenu">›</span></a>
+                    <ul class="submenu">
+                        <li><a href="kit-iniciante.html">Kit Iniciante</a></li>
+                        <li><a href="kit-avancado.html">Kit Avançado</a></li>
+                    </ul>
+                </li>
+
+                <li class="item-com-submenu">
+                    <a href="#">ROBÓTICA E MOTORES <span class="seta-submenu">›</span></a>
+                    <ul class="submenu">
+                        <li><a href="motores-dc.html">Motores DC</a></li>
+                        <li><a href="servo-dc.html">Servo DC</a></li>
+                    </ul>
+                </li>
+
+                <li class="item-com-submenu">
+                    <a href="#">NOVIDADES <span class="seta-submenu">›</span></a>
+                    <ul class="submenu">
+                        <li><a href="promocoes.html">Promoções</a></li>
+                        <li><a href="outros.html">Outros</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <div id="menu-overlay"></div>
+</div>
+
+</body>
+</html>
