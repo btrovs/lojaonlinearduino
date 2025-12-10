@@ -1,0 +1,498 @@
+/* ============================================================
+ESTILOS GERAIS
+============================================================ */
+
+/* ======= Configurações Gerais e Fontes ======= */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =================================== */
+/* ======= CABEÇALHO (HEADER) ======== */
+/* =================================== */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* --- Barra Superior --- */
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 5%;
+    flex-wrap: wrap;
+}
+
+.cabecalho img {
+    max-height: 50px;
+}
+
+.cabecalho-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+/* --- Barra de Pesquisa --- */
+.barra-pesquisa-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c593a; /* CORRIGIDO para o seu tema verde */
+    padding: 15px 5%;
+    gap: 20px;
+}
+.menu-icon {
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.barra-pesquisa {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.campo-pesquisa {
+    flex: 2;
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+}
+.seletor-categoria {
+    border: none;
+    border-left: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #333;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+.botao-pesquisa {
+    background-color: #1c593a; /* CORRIGIDO para o seu tema verde */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+}
+.botao-pesquisa img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+.carrinho-icone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+.carrinho-icone img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
+.contador {
+    background-color: white;
+    color: #1c593a; /* CORRIGIDO para o seu tema verde */
+    font-size: 13px;
+    border-radius: 50%;
+    padding: 2px 6px;
+    position: absolute;
+    top: -6px;
+    left: 18px;
+}
+.valor-total {
+    color: white;
+    font-weight: 600;
+}
+
+/* ============================================================
+FILTROS
+============================================================ */
+
+.filtros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+}
+
+.filtro-esq button {
+    border: none;
+    background: #e9ecef;
+    margin-right: 8px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filtro-esq .ativo {
+    background-color: #1c593a;
+    color: #fff;
+}
+
+.filtro-esq button:hover {
+    background-color: #dfe3e6;
+}
+
+.filtro-dir select {
+    margin-left: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* ============================================================
+GRID DE PRODUTOS
+============================================================ */
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    padding: 40px 80px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: 0.3s;
+    position: relative;
+    height: 420px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border-color: #1c593a;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #1c593a;
+    line-height: 1.4;
+}
+
+.card .classificacao {
+    font-size: 13px;
+    font-weight: 500;
+    color: #1c593a;
+    background-color: #e9f5ef;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin: 5px 0 8px;
+    display: inline-block;
+}
+
+.card:hover .classificacao {
+    background-color: #1c593a;
+    color: #fff;
+}
+
+.preco {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.selo-promocao {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #d32f2f;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 5px 8px;
+    border-radius: 6px;
+}
+
+.preco .antigo {
+    color: #888;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.preco .novo {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+/* ============================================================
+PAGINAÇÃO
+============================================================ */
+
+.paginacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2rem 0;
+    border-top: 1px solid #ddd;
+    background-color: #f5f5f5;
+}
+
+.paginas {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.paginas button {
+    border: 1px solid #ddd;
+    background: none;
+    color: #555;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.paginas button:hover {
+    border-color: #1c593a;
+    color: #1c593a;
+}
+
+.paginas button.ativo {
+    background-color: #1c593a;
+    color: #fff;
+}
+
+/* ============================================================
+FOOTER
+============================================================ */
+
+/* --- NOVO CSS DO RODAPÉ (VERTICAL E VERDE ESCURO) --- */
+        footer {
+            background-color: #0b3d2b; /* Verde Escuro */
+            border-top: 5px solid #00ff88; /* Linha verde neon no topo para destaque */
+            padding-top: 50px;
+            margin-top: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff; /* Texto Branco */
+            text-align: center; /* Centraliza tudo no rodapé */
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 40px;
+            padding: 0 20px 40px 20px;
+        }
+
+        .footer-column {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .footer-logo {
+            max-width: 140px;
+            margin-bottom: 30px; /* Aumentei a margem para separar do resto */
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block; /* Garante que a logo fique centralizada */
+        }
+
+        .footer-column h4 {
+            color: #00ff88;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #00ff88;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        .footer-column p {
+            line-height: 1.6;
+            color: #e0e0e0;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .phone-number {
+            font-size: 1.4rem !important;
+            font-weight: bold;
+            color: #fff !important;
+            margin-top: 5px;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons img {
+            width: 36px;
+            height: 36px;
+            transition: transform 0.2s;
+            /* Cores originais (sem filtro) */
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        .footer-bottom-bar {
+            background-color: #06291d;
+            padding: 30px 20px;
+            text-align: center;
+            border-top: 1px solid #1a5c45;
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            color: #88cba9;
+            margin-bottom: 20px;
+        }
+
+        .footer-payment-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .footer-payment-icons img {
+            height: 35px;
+            object-fit: contain;
+            background: rgba(255,255,255,0.9);
+            padding: 3px;
+            border-radius: 4px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00ff88;
+            color: #0b3d2b;
+            width: 45px;
+            height: 45px;
+            text-align: center;
+            line-height: 45px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+            z-index: 999;
+            transition: transform 0.3s;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            background-color: #fff;
+        }
+/* ============================================================
+RESPONSIVIDADE
+============================================================ */
+
+@media (max-width: 900px) {
+    .filtros {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 40px;
+    }
+
+    .produtos {
+        padding: 20px 40px;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .barra-pesquisa-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    .footer-bottom-bar {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-payment-icons img {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        height: auto;
+        padding: 15px;
+    }
+
+    .paginas {
+        overflow-x: auto;
+        padding-bottom: 5px;
+    }
+
+    .barra-pesquisa {
+        width: 100%;
+    }
+}
+
+
+
+
